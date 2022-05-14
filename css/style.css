@@ -1,0 +1,105 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+section .box {
+  width: 400px;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: first-car;
+  animation-duration: 5s;
+  animation-delay: 0.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+section .box img {
+  width: 50%;
+}
+section .box-two img {
+  width: 100%;
+}
+section .box-two {
+  width: 400px;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: second-car;
+  animation-duration: 5s;
+  animation-delay: 0.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+@keyframes first-car {
+  0% {
+    left: 0%;
+    bottom: 0%;
+  }
+  20% {
+    left: 200px;
+    bottom: 0%;
+  }
+  40% {
+    left: 300px;
+    bottom: 0%;
+  }
+  60% {
+    left: 400px;
+    bottom: 0%;
+  }
+  80% {
+    left: 700px;
+    bottom: 0%;
+  }
+  100% {
+    left: 1200px;
+    bottom: 0%;
+  }
+}
+@keyframes second-car {
+  0% {
+    right: 0%;
+    bottom: 0%;
+  }
+  20% {
+    right: 200px;
+    bottom: 0%;
+  }
+  40% {
+    right: 300px;
+    bottom: 0%;
+  }
+  60% {
+    right: 400px;
+    bottom: 0%;
+  }
+  80% {
+    right: 700px;
+    bottom: 0%;
+  }
+  100% {
+    right: 1200px;
+    bottom: 0%;
+  }
+}
